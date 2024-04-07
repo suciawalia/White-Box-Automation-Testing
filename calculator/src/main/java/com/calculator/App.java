@@ -6,36 +6,25 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Masukkan operand pertama: ");
-        int operand1 = getOperand(scanner);
-        
-        System.out.print("Masukkan operand kedua: ");
-        int operand2 = getOperand(scanner);
-        
-        System.out.print("Masukkan operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-        
-        Calculator calculator = new Calculator();
         try {
+            System.out.print("Masukkan operand pertama: ");
+            int operand1 = Validation.parseOperand(scanner.next());
+        
+            System.out.print("Masukkan operand kedua: ");
+            int operand2 = Validation.parseOperand(scanner.next());
+            
+            System.out.print("Masukkan operator (+, -, *, /): ");
+            char operator = scanner.next().charAt(0);
+        
+            Calculator calculator = new Calculator();
             int result = calculator.compute(operand1, operand2, operator);
             System.out.println("Hasil: " + result);
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
             // Program berhenti setelah menampilkan pesan kesalahan
             System.exit(1);
-        }
-        
-        scanner.close();
-    }
-    
-    private static int getOperand(Scanner scanner) {
-        String input = scanner.next();
-        try {
-            return Validation.parseOperand(input);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-            System.exit(1);
-            return 0;
+        } finally {
+            scanner.close();
         }
     }
 }
