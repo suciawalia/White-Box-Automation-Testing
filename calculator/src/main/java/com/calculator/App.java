@@ -7,10 +7,10 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Masukkan operand pertama: ");
-        int operand1 = scanner.nextInt();
+        int operand1 = getOperand(scanner);
         
         System.out.print("Masukkan operand kedua: ");
-        int operand2 = scanner.nextInt();
+        int operand2 = getOperand(scanner);
         
         System.out.print("Masukkan operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
@@ -24,5 +24,16 @@ public class App {
         }
         
         scanner.close();
+    }
+    
+    private static int getOperand(Scanner scanner) {
+        while (true) {
+            String input = scanner.next();
+            try {
+                return Validation.parseOperand(input);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage() + " Masukkan kembali: ");
+            }
+        }
     }
 }
