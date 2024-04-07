@@ -17,9 +17,14 @@ public class Validation {
 
     public static int parseOperand(String input) {
         try {
+            // Cek apakah input mengandung titik desimal
+            if (input.contains(".")) {
+                throw new IllegalArgumentException("Nilai yang dihitung harus berupa bilangan bulat, tidak boleh berupa float.");
+            }
             return Integer.parseInt(input);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Nilai yang dihitung harus angka, tidak boleh karakter.");
         }
     }
+    
 }

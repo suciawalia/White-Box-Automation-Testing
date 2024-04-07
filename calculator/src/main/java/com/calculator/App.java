@@ -21,19 +21,21 @@ public class App {
             System.out.println("Hasil: " + result);
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
+            // Program berhenti setelah menampilkan pesan kesalahan
+            System.exit(1);
         }
         
         scanner.close();
     }
     
     private static int getOperand(Scanner scanner) {
-        while (true) {
-            String input = scanner.next();
-            try {
-                return Validation.parseOperand(input);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage() + " Masukkan kembali: ");
-            }
+        String input = scanner.next();
+        try {
+            return Validation.parseOperand(input);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return 0;
         }
     }
 }
