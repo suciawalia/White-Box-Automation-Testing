@@ -24,6 +24,7 @@ public class App {
             // Program berhenti setelah menampilkan pesan kesalahan
         } finally {
             scanner.close();
+            System.exit(1);
         }
     }
 }
