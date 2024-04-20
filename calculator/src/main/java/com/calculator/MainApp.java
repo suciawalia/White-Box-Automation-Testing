@@ -8,10 +8,10 @@ public class MainApp {
         
         try {
             System.out.print("Masukkan operand pertama: ");
-            int operand1 = Validation.parseOperand(scanner.next());
+            int operand1 = Validation.integerValidation(scanner.next());
         
             System.out.print("Masukkan operand kedua: ");
-            int operand2 = Validation.parseOperand(scanner.next());
+            int operand2 = Validation.integerValidation(scanner.next());
             
             System.out.print("Masukkan operator (+, -, *, /): ");
             char operator = scanner.next().charAt(0);
