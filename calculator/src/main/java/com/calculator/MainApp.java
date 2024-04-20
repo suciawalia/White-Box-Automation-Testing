@@ -2,7 +2,7 @@ package com.calculator;
 
 import java.util.Scanner;
 
-public class App {
+public class MainApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -21,10 +21,9 @@ public class App {
             System.out.println("Hasil: " + result);
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
-            // Program berhenti setelah menampilkan pesan kesalahan
         } finally {
             scanner.close();
-            System.exit(1);
+            System.exit(0);
         }
     }
 }
