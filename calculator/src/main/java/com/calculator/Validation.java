@@ -20,15 +20,14 @@ public class Validation {
         if (input.contains(".")) {
             throw new IllegalArgumentException("Nilai yang dihitung harus berupa bilangan bulat, tidak boleh berupa float.");
         }
-    
         // Coba parsing input menjadi bilangan integer
         int result;
         try {
             result = Integer.parseInt(input);
+            return result;
         } catch (NumberFormatException e) {            
             throw new IllegalArgumentException("Nilai yang dihitung harus angka, tidak boleh karakter.");
         }
-        return result;
     }
-    
+
 }
