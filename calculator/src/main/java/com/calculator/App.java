@@ -22,7 +22,6 @@ public class App {
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
             // Program berhenti setelah menampilkan pesan kesalahan
-            System.exit(1);
         } finally {
             scanner.close();
         }
