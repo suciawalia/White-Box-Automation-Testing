@@ -16,12 +16,16 @@ public class Validation {
     }
 
     public static int integerValidation(String input) {
+        // Cek apakah input mengandung titik (untuk bilangan float)
+        if (input.contains(".")) {
+            throw new IllegalArgumentException("Nilai yang dihitung harus berupa bilangan bulat, tidak boleh berupa float.");
+        }
+        // Coba parsing input menjadi bilangan integer
+        int result;
         try {
-            if (input.contains(".")) {
-                throw new IllegalArgumentException("Nilai yang dihitung harus berupa bilangan bulat, tidak boleh berupa float.");
-            }
-            return Integer.parseInt(input);
-        } catch (NumberFormatException e) {
+            result = Integer.parseInt(input);
+            return result;
+        } catch (NumberFormatException e) {            
             throw new IllegalArgumentException("Nilai yang dihitung harus angka, tidak boleh karakter.");
         }
     }
