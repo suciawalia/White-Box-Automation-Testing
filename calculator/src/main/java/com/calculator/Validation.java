@@ -15,7 +15,7 @@ public class Validation {
         }
     }
 
-    public static int parseOperand(String input) {
+    public static int integerValidation(String input) {
         try {
             if (input.contains(".")) {
                 throw new IllegalArgumentException("Nilai yang dihitung harus berupa bilangan bulat, tidak boleh berupa float.");
