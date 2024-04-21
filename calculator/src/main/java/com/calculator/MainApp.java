@@ -23,7 +23,6 @@ public class MainApp {
             System.out.println("Error: " + e.getMessage());
         } finally {
             scanner.close();
-            System.exit(0);
         }
     }
 }

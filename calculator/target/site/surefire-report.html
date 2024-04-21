@@ -79,12 +79,12 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
-<td>11</td>
+<td>19</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
-<td>90.9%</td>
-<td>0.287 s</td></tr></table><br />
+<td>89.5%</td>
+<td>0.056 s</td></tr></table><br />
 <p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div>
 <div class="section"><a id="Package_List"></a>
 <h2><a name="Package_List"></a>Package List</h2>
@@ -100,12 +100,12 @@ function toggleDisplay(elementId) {
 <th>Time</th></tr>
 <tr class="b">
 <td><a href="#com.calculator">com.calculator</a></td>
-<td>11</td>
+<td>19</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
-<td>90.9%</td>
-<td>0.287 s</td></tr></table><br />
+<td>89.5%</td>
+<td>0.056 s</td></tr></table><br />
 <p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p>
 <div class="section"><a id="com.calculator"></a>
 <h3><a name="com.calculator"></a>com.calculator</h3>
@@ -120,23 +120,23 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
-<td><a href="#com.calculator.AppTest"> src="images/icon_success_sml.gif"</a></td>
-<td><a href="#com.calculator.AppTest">AppTest</a></td>
-<td>1</td>
+<td><a href="#com.calculator.CalculatorTest"> src="images/icon_warning_sml.gif"</a></td>
+<td><a href="#com.calculator.CalculatorTest">CalculatorTest</a></td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>60.0%</td>
+<td>0.054 s</td></tr>
+<tr class="a">
+<td><a href="#com.calculator.MainAppTest"> src="images/icon_success_sml.gif"</a></td>
+<td><a href="#com.calculator.MainAppTest">MainAppTest</a></td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
-<td>0.171 s</td></tr>
-<tr class="a">
-<td><a href="#com.calculator.CalculatorTest"> src="images/icon_warning_sml.gif"</a></td>
-<td><a href="#com.calculator.CalculatorTest">CalculatorTest</a></td>
-<td>4</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>75.0%</td>
-<td>0.114 s</td></tr>
+<td>0 s</td></tr>
 <tr class="b">
 <td><a href="#com.calculator.ValidationTest"> src="images/icon_success_sml.gif"</a></td>
 <td><a href="#com.calculator.ValidationTest">ValidationTest</a></td>
@@ -149,44 +149,89 @@ function toggleDisplay(elementId) {
 <div class="section"><a id="Test_Cases"></a>
 <h2><a name="Test_Cases"></a>Test Cases</h2>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p>
-<div class="section"><a id="com.calculator.AppTest"></a>
-<h3><a name="AppTest"></a>AppTest</h3>
-<table border="0" class="bodyTable">
-<tr class="a">
-<td> src="images/icon_success_sml.gif"</td>
-<td><a id="TC_com.calculator.AppTest.shouldAnswerWithTrue"></a>shouldAnswerWithTrue</td>
-<td>0.003 s</td></tr></table></div>
 <div class="section"><a id="com.calculator.CalculatorTest"></a>
 <h3><a name="CalculatorTest"></a>CalculatorTest</h3>
 <table border="0" class="bodyTable">
 <tr class="a">
-<td> src="images/icon_success_sml.gif"</td>
-<td><a id="TC_com.calculator.CalculatorTest.testMultiplication"></a>testMultiplication</td>
-<td>0.004 s</td></tr>
-<tr class="b">
-<td> src="images/icon_success_sml.gif"</td>
-<td><a id="TC_com.calculator.CalculatorTest.testAddition"></a>testAddition</td>
-<td>0 s</td></tr>
-<tr class="a">
-<td><a href="#com.calculator.CalculatorTest.testDivision"> src="images/icon_error_sml.gif"</a></td>
-<td><a id="TC_com.calculator.CalculatorTest.testDivision"></a><a href="#com.calculator.CalculatorTest.testDivision">testDivision</a>
-<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('com.calculator.CalculatorTest.testDivision');"><span style="display:inline;" id="com.calculator.CalculatorTest.testDivision-off"> + </span><span style="display:none;" id="com.calculator.CalculatorTest.testDivision-on"> - </span>[ Detail ]</a></div></td>
-<td>0.009 s</td></tr>
+<td><a href="#com.calculator.CalculatorTest.testInvalidOperator"> src="images/icon_error_sml.gif"</a></td>
+<td><a id="TC_com.calculator.CalculatorTest.testInvalidOperator"></a><a href="#com.calculator.CalculatorTest.testInvalidOperator">testInvalidOperator</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('com.calculator.CalculatorTest.testInvalidOperator');"><span style="display:inline;" id="com.calculator.CalculatorTest.testInvalidOperator-off"> + </span><span style="display:none;" id="com.calculator.CalculatorTest.testInvalidOperator-on"> - </span>[ Detail ]</a></div></td>
+<td>0.014 s</td></tr>
 <tr class="b">
 <td>-</td>
-<td>expected:&lt;0.375&gt; but was:&lt;0.0&gt;</td>
+<td>expected:&lt;Operator [tidak valid: =]&gt; but was:&lt;Operator [yang boleh diinputkan adalah +, -, *, atau /]&gt;</td>
 <td>-</td></tr>
-<tr class="a" id="com.calculator.CalculatorTest.testDivision-failure" style="display:none;">
+<tr class="a" id="com.calculator.CalculatorTest.testInvalidOperator-failure" style="display:none;">
 <td>-</td>
 <td>
 <div class="source">
-<pre>java.lang.AssertionError: expected:&lt;0.375&gt; but was:&lt;0.0&gt;
-	at com.calculator.CalculatorTest.testDivision(CalculatorTest.java:62)
+<pre>org.junit.ComparisonFailure: expected:&lt;Operator [tidak valid: =]&gt; but was:&lt;Operator [yang boleh diinputkan adalah +, -, *, atau /]&gt;
+	at com.calculator.CalculatorTest.testInvalidOperator(CalculatorTest.java:73)
 </pre></div></td>
 <td>-</td></tr>
 <tr class="b">
 <td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.CalculatorTest.testMultiplication"></a>testMultiplication</td>
+<td>0 s</td></tr>
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.CalculatorTest.testAddition"></a>testAddition</td>
+<td>0 s</td></tr>
+<tr class="b">
+<td><a href="#com.calculator.CalculatorTest.testDivision"> src="images/icon_error_sml.gif"</a></td>
+<td><a id="TC_com.calculator.CalculatorTest.testDivision"></a><a href="#com.calculator.CalculatorTest.testDivision">testDivision</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('com.calculator.CalculatorTest.testDivision');"><span style="display:inline;" id="com.calculator.CalculatorTest.testDivision-off"> + </span><span style="display:none;" id="com.calculator.CalculatorTest.testDivision-on"> - </span>[ Detail ]</a></div></td>
+<td>0.001 s</td></tr>
+<tr class="a">
+<td>-</td>
+<td>expected:&lt;0.375&gt; but was:&lt;0.0&gt;</td>
+<td>-</td></tr>
+<tr class="b" id="com.calculator.CalculatorTest.testDivision-failure" style="display:none;">
+<td>-</td>
+<td>
+<div class="source">
+<pre>java.lang.AssertionError: expected:&lt;0.375&gt; but was:&lt;0.0&gt;
+	at com.calculator.CalculatorTest.testDivision(CalculatorTest.java:63)
+</pre></div></td>
+<td>-</td></tr>
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
 <td><a id="TC_com.calculator.CalculatorTest.testSubtraction"></a>testSubtraction</td>
+<td>0 s</td></tr></table></div>
+<div class="section"><a id="com.calculator.MainAppTest"></a>
+<h3><a name="MainAppTest"></a>MainAppTest</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputOperand2AsChar"></a>testInputOperand2AsChar</td>
+<td>0 s</td></tr>
+<tr class="b">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputOperand1AsFloat"></a>testInputOperand1AsFloat</td>
+<td>0 s</td></tr>
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputOperandOutOfRange"></a>testInputOperandOutOfRange</td>
+<td>0 s</td></tr>
+<tr class="b">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testUndefinedResult"></a>testUndefinedResult</td>
+<td>0 s</td></tr>
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputOperand2AsFloat"></a>testInputOperand2AsFloat</td>
+<td>0 s</td></tr>
+<tr class="b">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputTwoOperandsAndAnOperation"></a>testInputTwoOperandsAndAnOperation</td>
+<td>0 s</td></tr>
+<tr class="a">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputOperand1AsChar"></a>testInputOperand1AsChar</td>
+<td>0 s</td></tr>
+<tr class="b">
+<td> src="images/icon_success_sml.gif"</td>
+<td><a id="TC_com.calculator.MainAppTest.testInputInvalidOperator"></a>testInputInvalidOperator</td>
 <td>0 s</td></tr></table></div>
 <div class="section"><a id="com.calculator.ValidationTest"></a>
 <h3><a name="ValidationTest"></a>ValidationTest</h3>
@@ -221,14 +266,24 @@ function toggleDisplay(elementId) {
 <table border="0" class="bodyTable">
 <tr class="a">
 <td> src="images/icon_error_sml.gif"</td>
-<td><a id="com.calculator.CalculatorTest.testDivision"></a>testDivision</td></tr>
+<td><a id="com.calculator.CalculatorTest.testInvalidOperator"></a>testInvalidOperator</td></tr>
 <tr class="b">
 <td>-</td>
-<td>java.lang.AssertionError: expected:&lt;0.375&gt; but was:&lt;0.0&gt;</td></tr>
+<td>org.junit.ComparisonFailure: expected:&lt;Operator [tidak valid: =]&gt; but was:&lt;Operator [yang boleh diinputkan adalah +, -, *, atau /]&gt;</td></tr>
 <tr class="a">
 <td>-</td>
 <td>
-<div id="testDivision-failure">com.calculator.CalculatorTest:62</div></td></tr></table><br /></div>
+<div id="testInvalidOperator-failure">com.calculator.CalculatorTest:73</div></td></tr>
+<tr class="b">
+<td> src="images/icon_error_sml.gif"</td>
+<td><a id="com.calculator.CalculatorTest.testDivision"></a>testDivision</td></tr>
+<tr class="a">
+<td>-</td>
+<td>java.lang.AssertionError: expected:&lt;0.375&gt; but was:&lt;0.0&gt;</td></tr>
+<tr class="b">
+<td>-</td>
+<td>
+<div id="testDivision-failure">com.calculator.CalculatorTest:63</div></td></tr></table><br /></div>
       </div>
     </div>
     <div class="clear">
