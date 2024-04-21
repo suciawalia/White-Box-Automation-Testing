@@ -1,6 +1,7 @@
 package com.calculator;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -55,11 +56,22 @@ public class CalculatorTest {
         int operand1 = 9;
         int operand2 = 24;
         char operator = '/';
-        float expectedResult = 0.375f; // Mengubah tipe data menjadi float
+        float expectedResult = 0.375f; 
         
-        float result = calculator.compute(operand1, operand2, operator); // Mengubah tipe data menjadi float
+        float result = calculator.compute(operand1, operand2, operator);
         
-        assertEquals(expectedResult, result, 0.001f); // Menggunakan delta 0.001 untuk toleransi kesalahan
+        assertEquals(expectedResult, result, 0.001f); 
+    }
+
+    @Test
+    public void testInvalidOperator() {
+        Calculator calculator = new Calculator();
+        try {
+            calculator.compute(9, 24, '='); 
+            fail("Expected IllegalArgumentException was not thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Operator tidak valid: %", e.getMessage());
+        }
     }
 
 }
