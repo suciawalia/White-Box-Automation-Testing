@@ -18,43 +18,42 @@
 ## Directory Tree Project
 ```
 .
-└── calculator
-    ├── src
-    │   ├── main
-    │   │   └── java
-    │   │       └── com
-    │   │           └── calculator
-    │   │               ├── Calculator.java
-    │   │               ├── MainApp.java
-    │   │               └── Validation.java
-    │   └── test
-    │       └── java
-    │           └── com
-    │               ├── calculator
-    │               ├── CalculatorTest.java
-    │               ├── MainAppTest.java
-    │               └── ValidationTest.java
-    ├── target
-    │   ├── classes/com/calculator
-    │   │   └── ....
-    │   ├── generated-sources
-    │   ├── generated-test-sources
-    │   ├── maven-status/maven-compiler-plugin
-    │   │   ├── compile/default-compile
-    │   │   │   └── ...
-    │   │   └── testCompile/default-testCompile
-    │   │       └── ...
-    │   ├── site
-    │   │   ├── css
-    │   │   │   └── ...
-    │   │   ├── images
-    │   │   │   └── ...
-    │   │   ├── surefire-report.html
-    │   │   └── ...
-    │   ├── surefire-reports
-    │   └── test-classes/com/calculator
-    │       └── ...
-    └── pom.xml
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── calculator
+│   │               ├── Calculator.java
+│   │               ├── MainApp.java
+│   │               └── Validation.java
+│   └── test
+│       └── java
+│           └── com
+│               ├── calculator
+│               ├── CalculatorTest.java
+│               ├── MainAppTest.java
+│               └── ValidationTest.java
+├── target
+│   ├── classes/com/calculator
+│   │   └── ....
+│   ├── generated-sources
+│   ├── generated-test-sources
+│   ├── maven-status/maven-compiler-plugin
+│   │   ├── compile/default-compile
+│   │   │   └── ...
+│   │   └── testCompile/default-testCompile
+│   │       └── ...
+│   ├── site
+│   │   ├── css
+│   │   │   └── ...
+│   │   ├── images
+│   │   │   └── ...
+│   │   ├── surefire-report.html
+│   │   └── ...
+│   ├── surefire-reports
+│   └── test-classes/com/calculator
+│       └── ...
+└── pom.xml
 ```
 ## Prerequisites
 
@@ -72,12 +71,6 @@ Clone the project
 
 ```bash
   git clone https://github.com/suciawalia/White-Box-Automation-Testing.git
-```
-
-Go to the project directory
-
-```bash
-  cd calculator
 ```
 
 Compile and run app
@@ -98,7 +91,7 @@ To run tests, run the following command
 ## Hasil Tests
 ### Root file test report
 ```
-..\calculator\target\site\surefire-report.html
+..\target\site\surefire-report.html
 ```
 ### Contoh hasil test report dan cara membacanya
 **1. Summary**
