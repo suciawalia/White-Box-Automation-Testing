@@ -136,4 +136,4 @@ To run tests, run the following command
 
 - 211524001 | Adinda Faayza Malika [@adindafaayza](https://github.com/adindafaayza)
 - 211524003 | Annisa Dinda Gantini [@annisaadg](https://github.com/annisaadg)
-- 211524027 | Suci Awalia Gardara [@annisaadg](https://github.com/suciawalia)
+- 211524027 | Suci Awalia Gardara [@suciawalia](https://github.com/suciawalia)
