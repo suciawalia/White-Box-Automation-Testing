@@ -70,7 +70,7 @@ public class CalculatorTest {
             calculator.compute(9, 24, '='); 
             fail("Expected IllegalArgumentException was not thrown");
         } catch (IllegalArgumentException e) {
-            assertEquals("Operator tidak valid: %", e.getMessage());
+            assertEquals("Operator tidak valid: =", e.getMessage());
         }
     }
 
