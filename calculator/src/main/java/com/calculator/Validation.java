@@ -29,5 +29,5 @@ public class Validation {
             throw new IllegalArgumentException("Nilai yang dihitung harus angka, tidak boleh karakter.");
         }
     }
-    
+
 }
