@@ -111,6 +111,14 @@ Compile and run app
 To run tests, run the following command
 
 ```bash
+   mvn test
+```
+
+## Generate Report by tools
+
+Here is the command to generate a report using maven
+
+```bash
   mvn site
 ```
 
