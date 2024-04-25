@@ -156,7 +156,7 @@ Here is the command to generate a report using maven
 - Jumlah error pada test case (Errors) adalah 0
 - Jumlah test case yang fail (Failures) adalah 2
 - Jumlah test case yang dilewati (Skipped) adalah 0
-- Success Rate nya adalah 88.9%
+- Success Rate nya adalah 89.5%
 - Waktu eksekusi test nya (Time) nya adalah 0.193s
 
 **2. Package List**
