@@ -59,10 +59,10 @@ Pengujian-pengujian yang dilakukan pada modul-modul dibawah sesuai dengan Test C
 │   └── test
 │       └── java
 │           └── com
-│               ├── calculator
-│               ├── CalculatorTest.java
-│               ├── MainAppTest.java
-│               └── ValidationTest.java
+│               └── calculator
+│                   ├── CalculatorTest.java
+│                   ├── MainAppTest.java
+│                   └── ValidationTest.java
 ├── target
 │   ├── classes/com/calculator
 │   │   └── ....
@@ -85,6 +85,25 @@ Pengujian-pengujian yang dilakukan pada modul-modul dibawah sesuai dengan Test C
 │       └── ...
 └── pom.xml
 ```
+### Penjelasan Directory Root Project
+1. **src:** Ini adalah direktori sumber (source) utama yang berisi kode sumber aplikasi.
+2. **main\java\com\calculator:** Ini adalah direktori di mana kode sumber utama (production code) dari aplikasi ditempatkan.
+3. **Calculator.java:** Ini berisi implementasi dari kelas kalkulator.
+4. **MainApp.java:** In berisi kelas dengan metode main() sebagai titik masuk aplikasi.
+5. **Validation.java:** Ini berisi kelas-kelas yang menangani validasi input atau data.
+6. **test\java\com\calculator:** Ini adalah direktori di mana kode sumber pengujian (test code) dari aplikasi ditempatkan.
+7. **CalculatorTest.java:** Ini berisi pengujian untuk kelas kalkulator.
+8. **MainAppTest.java:** Ini berisi pengujian untuk kelas MainApp.
+9.  **ValidationTest.java:** Ini berisi pengujian untuk kelas validasi.
+10. **target:** Ini adalah direktori yang berisi hasil dari proses kompilasi dan pembuatan (build) lainnya.
+11. **classes/com/calculator:** Direktori tempat hasil kompilasi dari kode sumber utama ditempatkan.
+12. **generated-sources:** Direktori untuk sumber yang dihasilkan, mungkin oleh proses generasi kode.
+13. **generated-test-sources:** Direktori untuk sumber pengujian yang dihasilkan.
+14. **maven-status/maven-compiler-plugin:** Direktori yang berisi informasi status proyek yang dihasilkan oleh Maven.
+15. **site:** Direktori yang berisi laporan dan sumber daya lainnya yang dihasilkan oleh plugin Maven yang berorientasi laporan.
+16. **surefire-reports:** Direktori yang berisi laporan hasil pengujian yang dihasilkan oleh Surefire plugin.
+17. **pom.xml:** Ini adalah berkas POM (Project Object Model) Maven yang berisi konfigurasi proyek, dependensi, dan informasi lainnya yang diperlukan oleh Maven untuk membangun proyek.
+
 ## Prerequisites
 
 - Install java
