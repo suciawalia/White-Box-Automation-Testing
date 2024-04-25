@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.calculator.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.054 s <<< FAILURE! - in com.calculator.CalculatorTest
-testInvalidOperator(com.calculator.CalculatorTest)  Time elapsed: 0.014 s  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.16 s <<< FAILURE! - in com.calculator.CalculatorTest
+testInvalidOperator(com.calculator.CalculatorTest)  Time elapsed: 0.028 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<Operator [tidak valid: =]> but was:<Operator [yang boleh diinputkan adalah +, -, *, atau /]>
-	at com.calculator.CalculatorTest.testInvalidOperator(CalculatorTest.java:73)
+	at com.calculator.CalculatorTest.testInvalidOperator(CalculatorTest.java:80)
 
-testDivision(com.calculator.CalculatorTest)  Time elapsed: 0.001 s  <<< FAILURE!
+testDivision(com.calculator.CalculatorTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: expected:<0.375> but was:<0.0>
-	at com.calculator.CalculatorTest.testDivision(CalculatorTest.java:63)
+	at com.calculator.CalculatorTest.testDivision(CalculatorTest.java:69)
 
