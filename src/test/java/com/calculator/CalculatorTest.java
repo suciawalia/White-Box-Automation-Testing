@@ -3,6 +3,8 @@ package com.calculator;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
+import org.junit.jupiter.api.DisplayName;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,6 +18,7 @@ public class CalculatorTest {
     }
     
     @Test
+    @DisplayName("TC2-01 Operasi penjumlahan dua bilangan")
     public void testAddition() {
         int operand1 = 9;
         int operand2 = 24;
@@ -28,6 +31,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("TC2-02 Operasi pengurangan dua bilangan")
     public void testSubtraction() {
         int operand1 = 9;
         int operand2 = 24;
@@ -40,6 +44,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("TC2-03 Operasi perkalian dua bilangan")
     public void testMultiplication() {
         int operand1 = 9;
         int operand2 = 24;
@@ -52,6 +57,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("TC2-04 Operasi pembagian dua bilangan")
     public void testDivision() {
         int operand1 = 9;
         int operand2 = 24;
@@ -64,6 +70,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @DisplayName("TC2-05 Operasi dua bilangan dimana operator yang dimasukkan invalid (bukan berupa +, -, *, atau /)")
     public void testInvalidOperator() {
         Calculator calculator = new Calculator();
         try {
