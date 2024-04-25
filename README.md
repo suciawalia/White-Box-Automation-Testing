@@ -161,7 +161,7 @@ Here is the command to generate a report using maven
 
 **2. Package List**
 
-![Screenshot 2024-04-25 233652](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/f6a3b20b-e67a-4404-a6e5-ff7852078c7e)
+![Screenshot 2024-04-25 232740](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/2d356247-bfa7-4c69-86c2-ef558f0c797b)
 
 - Package yang di test adalah package "com.calculator"
 - Berdasarkan gambar diatas, test report menampilkan tiga class test yang dijalankan pada proses ini, yaitu CalculatorTest, MainAppTest, dan ValidationTest.
@@ -169,7 +169,7 @@ Here is the command to generate a report using maven
 
 **3. Test Result CalculatorTest**
 
-![Screenshot 2024-04-25 233504](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/7aa2e945-982e-44e3-ab43-a771b948420d)
+![Screenshot 2024-04-25 232907](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/58aa641f-3cc5-4920-9fe4-2a617be67ceb)
 
 - Test report menunjukkan bahwa terdapat lima test case yang dieksekusi pada Class CalculatorTest, yaitu 'testInvalidOperator', 'testMultiplication', 'testAddition', 'testDivision', dan 'testSubstraction'.
 - Test report menunjukkan bahwa terdapat 2 test case yang fail, yaitu 'testInvalidOperator' dan 'testDivision', ditandai dengan adanya keterangan ' - [Detail] ' di sebelah test case name, dan akan menampilkan detail failure dari test case tersebut.
@@ -183,14 +183,14 @@ Here is the command to generate a report using maven
 
 **5. Test Result ValidationTest**
 
-![Screenshot 2024-04-25 232907](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/58aa641f-3cc5-4920-9fe4-2a617be67ceb)
+![Screenshot 2024-04-25 233504](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/7aa2e945-982e-44e3-ab43-a771b948420d)
 
 - Test report menunjukkan bahwa terdapat enam test case yang dieksekusi pada Class MainAppTest, yaitu 'testInvalidOperator', ' testInvalidInputValidation', ' testOperand1OutOfRange', ' testDivisionByZero', 'testFloatInputValidation', dan 'testOperand1OutOfRangeMin'.
 - Test report menunjukkan bahwa tidak ada failures dari test class ini.
 
 **6. Failure Details**
 
-![Screenshot 2024-04-25 232740](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/2d356247-bfa7-4c69-86c2-ef558f0c797b)
+![Screenshot 2024-04-25 233652](https://github.com/suciawalia/White-Box-Automation-Testing/assets/99375342/f6a3b20b-e67a-4404-a6e5-ff7852078c7e)
 
 - Failure details menunjukkan test case yang fail, mencakup keterangan penyebab fail dan class serta line pada class tersebut yang menyebabkan fail.
 
