@@ -11,10 +11,40 @@
 - **Tampilan Hasil**: Hasil perhitungan akan ditampilkan ke layar untuk dilihat oleh pengguna.
 
 
-### Modul
-- **MainApp**: Modul ini bertanggung jawab untuk menangani interaksi dengan pengguna dan menjalankan proses kalkulator. Pengguna akan memasukkan input operand dan operator melalui modul ini, dan hasil perhitungan akan ditampilkan kembali kepada pengguna.
-- **Calculator**: Modul ini berisi logika perhitungan matematika untuk operasi penjumlahan, pengurangan, perkalian, dan pembagian. Setiap operasi memiliki method tersendiri untuk melakukan perhitungan.
-- **Validation**: Modul ini bertanggung jawab untuk melakukan validasi terhadap input pengguna sebelum proses perhitungan dilakukan. Validasi dilakukan secara berurutan sesuai dengan aturan yang telah ditetapkan, dan jika ada kesalahan, pesan error akan ditampilkan kepada pengguna.
+### Class
+- **MainApp**: Class ini bertanggung jawab untuk menangani interaksi dengan pengguna dan menjalankan proses kalkulator. Pengguna akan memasukkan input operand dan operator melalui modul MainApp, dan hasil perhitungan akan ditampilkan kembali kepada pengguna.
+- **Calculator**: Class ini berisi logika perhitungan matematika untuk operasi penjumlahan, pengurangan, perkalian, dan pembagian yang terdapat pada modul compute. Setiap operasi memiliki method tersendiri untuk melakukan perhitungan.
+- **Validation**: Class ini bertanggung jawab untuk melakukan validasi terhadap input pengguna sebelum proses perhitungan dilakukan. Validasi dilakukan secara berurutan sesuai dengan aturan yang telah ditetapkan, dan jika ada kesalahan, pesan error akan ditampilkan kepada pengguna. Terdapat dua modul yaitu integerValidation untuk melakukan validasi jika nilai yang diinputkan bukan integer. Selain itu terdapat modul validate untuk melakukan validasi jika operator yang diinputkan tidak sesuai dengan ketentuan, nilai operand 1 dan operand 2 berada di luar rentang yang telah ditentukan, dan validasi penyebut tidak boleh 0 untuk operasi pembagian.
+- **MainAppTest**: Class ini meripakan class pengujian (unit test) untuk menguji fungsi-fungsi yang ada di dalam class MainApp
+- **CalculatorTest**: Class ini merupakan class pengujian (unit test) untuk menguji operasi matematika yang ada pada class Calculator.
+- **ValidationTest**: Class ini merupakan class pengujian (unit test) untuk menguji validasi input yang ada pada class Validation.
+
+## Test Case
+Pengujian-pengujian yang dilakukan pada modul-modul dibawah sesuai dengan Test Case yang telah dibuat. Di antaranya yaitu:
+1. **MainApp**
+   - Input dua buah operand, memilih operator, dan menampilkan hasilnya ke layar
+   - Input operand pertama bukan bilangan bulat (data float)
+   - Input operand pertama bukan bilangan bulat (karakter)
+   - Input operand kedua bukan bilangan bulat (data float)
+   - Input operand kedua bukan bilangan bulat (karakter)
+   - Input operator tidak valid
+   - Input operand tidak valid (diluar range -32,768 hingga 32,767)
+   - Input operand tidak valid (hasil operasi tidak terdefinisi)
+2. **Compute**
+   - Operasi penjumlahan dua bilangan
+   - Operasi pengurangan dua bilangan
+   - Operasi perkalian dua bilangan
+   - Operasi pembagian dua bilangan
+   - Operasi dua bilangan dimana operator yang dimasukkan invalid (bukan berupa +, -, *, atau /)
+3. **integerValidation**
+   - Validasi angka yang diinputkan berupa float yaitu 4,5
+   - Validasi nilai yang diinputkan berupa char yaitu "s"
+4. **validate**
+   - Validasi angka positif yang diinputkan berada diluar rentang -32768 hingga 32767
+   - Validasi angka negatif yang diinputkan berada diluar rentang -32768 hingga 32767
+   - Validasi operator yang diinputkan selain "+", "-", "*", "/" yaitu "x"
+   - Validasi operand2 yang diinputkan adalah 0 ketika input operator pembagi(/)
+   
 ## Directory Tree Project
 ```
 .
@@ -62,9 +92,6 @@
 - Install Visual Studio Code
 - Install Extension Pack for java
 
-
-
-
 ## Menjalankan Aplikasi
 
 Clone the project
@@ -78,7 +105,7 @@ Compile and run app
   mvn spring-boot:run
 ```
 
-
+## 
 ## Menjalankan Tests
 
 To run tests, run the following command
